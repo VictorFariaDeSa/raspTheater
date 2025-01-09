@@ -1,6 +1,6 @@
 {
     "1": "https://www.youtube.com/live/MoiM3TSSQJ4?si=tJNO4BN6TWXkbHWE",
     "2": "https://youtu.be/jTJvyKZDFsY?si=BNb5flwdAL6rGlu2",
-    "3": "http://127.0.0.1:5000/video-stream/testVideo.mp4",
-    "4": "https://www.youtube.com/live/MoiM3TSSQJ4?si=tJNO4BN6TWXkbHWE"
+    "facilities": "http://127.0.0.1:5000/video-stream/testVideo.mp4",
+    "4": "http://127.0.0.1:5000/video-stream/testVideo.mp4"
 }
