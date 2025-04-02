@@ -14,11 +14,6 @@ with open("videos.json","r") as file:
 def home():
     pass 
 
-
-
-
-
-
 @app.route("/get_video_dict")
 def get_video():
     return video_dict,200
@@ -91,6 +86,12 @@ def delete_video(videoName):
             return jsonify({"error": "Video not found"}), 404
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+
+@app.route("/change_video/<videoName>", methods=["POST"])
+def change_video(videoName):
+    return jsonify(videoName), 200
+
+
 
 if __name__ == "__main__":
     app.run(debug=True)

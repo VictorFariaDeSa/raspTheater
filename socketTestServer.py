@@ -110,6 +110,12 @@ def delete_video(videoName):
             return jsonify({"error": "Video not found"}), 404
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+    
+
+@app.route("/change_video/<videoName>", methods=["POST"])
+def change_video(videoName):
+    socketio.emit("change_video",videoName)
+    return jsonify(videoName), 200
 
 if __name__ == "__main__":
     socketio.run(app)
